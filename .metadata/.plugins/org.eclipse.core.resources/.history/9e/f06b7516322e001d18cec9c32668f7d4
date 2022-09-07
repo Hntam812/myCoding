@@ -1,0 +1,19 @@
+
+public class XuLy {
+
+	public static void main(String[] args) {
+		SinhVien sv1 = new SinhVien();
+		SinhVien sv2 = new SinhVien();
+		
+		sv1.hoTen="Demi";
+		sv1.email="demi@gmail.com";
+		
+		sv2.hoTen="Lou";
+		sv2.email="Lou@gmail.com";
+		
+		System.out.println(">Tên: "+sv1.hoTen+ "\nEmail:"+sv1.email);
+		System.out.println(">Tên: "+sv2.hoTen+ "\nEmail:"+sv2.email);
+
+	}
+
+}

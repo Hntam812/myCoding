@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class demoSinhVien {
+
+	public static void main(String[] args) {
+		
+//		SinhVien sv1 = new SinhVien();
+//		SinhVien sv2 = new SinhVien();
+		
+//		sv1.hoTen="Demi";
+//		sv1.email="demi@gmail.com";
+//		
+//		sv2.hoTen="Lou";
+//		sv2.email="Lou@gmail.com";
+//		
+//		//hoặc gọi constructor có tham số bên SinhVien()
+//		SinhVien sv3 = new SinhVien("Beo","Beo@gmail.com");
+//		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Vui lòng nhập tên sinh viên: ");
+//		String ten = sc.nextLine();
+//		System.out.println("Vui lòng nhập email sinh viên: ");
+//		String email = sc.nextLine();
+//		
+//		SinhVien sv4 = new SinhVien(ten, email);
+//		
+//		
+//		System.out.println(">Tên: "+sv1.hoTen+ "\nEmail:"+sv1.email);
+//		System.out.println(">Tên: "+sv2.hoTen+ "\nEmail:"+sv2.email);
+//		System.out.println(">Tên: "+sv3.hoTen+ "\nEmail:"+sv3.email);
+//		System.out.println(">Tên: "+sv4.hoTen+ "\nEmail:"+sv4.email);
+		
+//		sv1.setHoTen("Demi");
+//		sv1.setEmail("Demi@email.com");
+//		
+//		
+//		System.out.println(">Tên:" +sv1.getHoTen() +"\nEmail:"+sv1.getEmail());
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Vui lòng nhập tên sinh viên: ");
+		String ten = sc.nextLine();
+		System.out.println("Vui lòng nhập email sinh viên: ");
+		String email = sc.nextLine();
+		
+		System.out.println("Vui lòng nhập điểm toán: ");
+		float toan = Float.parseFloat(sc.next());
+		
+		System.out.println("Vui lòng nhập điểm lý: ");
+		float ly = Float.parseFloat(sc.next());
+		
+		System.out.println("Vui lòng nhập điểm hóa: ");
+		float hoa = Float.parseFloat(sc.next());
+		
+		SinhVien sv1 = new SinhVien();
+		
+		sv1.setHoTen(ten);
+		sv1.setEmail(email);
+		sv1.setToan(toan);
+		sv1.setLy(ly);
+		sv1.setHoa(hoa);
+		sv1.tinhDiemTB();
+		
+		System.out.println(">Tên: "+sv1.getHoTen()+"\nEmail:"+sv1.getEmail()+"\nĐiểm Trung bình:"+sv1.getDiemTB());
+		
+		
+		
+		
+
+	}
+
+}

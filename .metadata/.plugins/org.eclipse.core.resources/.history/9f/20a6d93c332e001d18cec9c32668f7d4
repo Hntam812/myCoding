@@ -1,0 +1,16 @@
+/**
+ * Mục đích : Xử lý nghieejo vụ liên quan đến Sinh Viên
+ * @author Demi
+ *Ngày tạo  : 
+ *Version : 1.0
+ */
+public class SinhVien {
+	
+	public String hoTen;
+	public String email;
+
+	public SinhVien() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

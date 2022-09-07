@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;XuLy&apos; to &apos;demoSinhVien&apos;&#x0D;&#x0A;- Original project: &apos;online-demoSV&apos;&#x0D;&#x0A;- Original element: &apos;XuLy&apos;&#x0D;&#x0A;- Renamed element: &apos;demoSinhVien&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;XuLy&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{XuLy.java[XuLy" matchStrategy="1" name="demoSinhVien" qualified="false" references="true" similarDeclarations="false" stamp="1662502817907" textual="false" version="1.0"/>
+</session>

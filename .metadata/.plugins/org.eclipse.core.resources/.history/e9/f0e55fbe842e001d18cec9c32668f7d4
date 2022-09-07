@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DemoHCN {
+
+	public static void main(String[] args) {
+		// Khởi tạo đối tượng 
+		HinhChuNhat hcn = new HinhChuNhat();
+		
+		Scanner sc = new Scanner(System.in);
+		hcn.nhap(sc);
+		hcn.tinhChuVi();
+		hcn.tinhDienTich();
+		hcn.xuat();
+		
+
+	}
+
+}

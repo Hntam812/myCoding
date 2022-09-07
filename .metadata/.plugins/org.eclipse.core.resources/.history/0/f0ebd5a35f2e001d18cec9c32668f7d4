@@ -1,0 +1,22 @@
+/**
+ * Mục đích : Xử lý nghiệp vụ liên quan đến Sinh Viên
+ * @author Demi
+ *Ngày tạo  : 
+ *Version : 1.0
+ */
+public class SinhVien {
+	
+	public String hoTen;
+	public String email;
+	
+	//Phương thức khởi tạo mặc định không tham số: 
+	public SinhVien() {}
+	
+	//Phương thức khởi tạo sử dụng hai tham số để truyền dữ liệu cho thuộc tính 
+	public SinhVien(String hoTen, String email) {
+		this.hoTen=hoTen;
+		this.email=email;
+	}
+	
+	
+}
