@@ -84,19 +84,19 @@ public class SinhVien {
 
 	// 4. input, output
 	public void nhap(Scanner sc) {
-		System.out.println("Nhập tên : ");
+		System.out.print("\nNhập tên : ");
 		this.tenSV = sc.nextLine();
 
-		System.out.println("Nhập mã SV : ");
+		System.out.print("\nNhập mã SV : ");
 		this.maSV = sc.nextLine();
 
-		System.out.println("Nhập điểm toán : ");
+		System.out.print("\nNhập điểm toán : ");
 		this.diemToan = Float.parseFloat(sc.nextLine());
 
-		System.out.println("Nhập điểm lý : ");
+		System.out.print("\nNhập điểm lý : ");
 		this.diemLy = Float.parseFloat(sc.nextLine());
 
-		System.out.println("Nhập điểm hóa : ");
+		System.out.print("\nNhập điểm hóa : ");
 		this.diemHoa = Float.parseFloat(sc.nextLine());
 	}
 

@@ -1,16 +1,18 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class QuanLyDanhSachSinhVien {
+public class QuanLyTruongHoc {
 
-	public QuanLyDanhSachSinhVien() {
+	public QuanLyTruongHoc() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		DanhSachSinhVien ds = new DanhSachSinhVien();
-		doMenu(ds);
+		TruongHoc truong = new TruongHoc();
+		truong.nhap();
+		doMenu(truong);
 
 	}
 
@@ -18,10 +20,11 @@ public class QuanLyDanhSachSinhVien {
 		System.out.println("Vui lòng chọn hành động : ");
 		System.out.println("1. Thêm sinh viên");
 		System.out.println("2. Xuất danh sách sinh viên");
+		System.out.println("3. Liệt kê danh sách sinh viên có điểm trung bình cao nhẩt");
 		System.out.println("0. Nhảy ra");
 	}
 
-	private static void doMenu(DanhSachSinhVien ds) {
+	private static void doMenu(TruongHoc truong) {
 		boolean flag = true;
 
 		Scanner sc = new Scanner(System.in);
@@ -33,12 +36,19 @@ public class QuanLyDanhSachSinhVien {
 			case 1:
 				SinhVien sv = new SinhVien();
 				sv.nhap(sc);
-				ds.themSinhVien(sv);
+				truong.themSinhVien(sv);
 				break;
 			case 2:
-				ds.tinhDTB();
-				ds.xepLoai();
-				ds.xuat();
+				truong.tinhDTB();
+				truong.xepLoai();
+				truong.xuat();
+				break;
+			case 3:
+				ArrayList<SinhVien> list = truong.timDSSVCoDTBCaoNhat();
+				for(SinhVien sv1 : list) {
+					sv1.xuat();
+				}
+				// list : chứa danh sách sinh viên có điểm trung bình cao nhất
 				break;
 			case 0:
 				flag = false;

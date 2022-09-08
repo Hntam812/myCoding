@@ -72,5 +72,32 @@ public class DanhSachSinhVien {
 			sv.xepLoai();
 		}
 	}
+	
+	
+	//Tìm sinh viên có điểm trung bình cao nhất (trả về danh sách) : trên từng danh sách sinh viên
+	public ArrayList<SinhVien> timDSSVCoDTBCaoNhat() {
+		
+		ArrayList<SinhVien> list = new ArrayList<SinhVien>();
+		
+		SinhVien svMax = this.listSV.get(0); //lấy sv đầu tiên gán làm Max
+		
+		                                     //Duyệt foreach trong list
+		for(SinhVien svCurent : this.listSV) {
+			if(svCurent.getDiemTB() > svMax.getDiemTB()) {
+				svMax=svCurent; //gán 1 object
+			}
+		}
+		
+		//Đã tìm thấy sinh max tại đây. Duyệt lại một lần nữa.
+		
+		for (SinhVien svCurrent : this.listSV) {
+			if(svCurrent.getDiemTB() == svMax.getDiemTB()) {
+				list.add(svCurrent);
+			}
+		}
+		return list;
+		
+		
+	}
 
 }
